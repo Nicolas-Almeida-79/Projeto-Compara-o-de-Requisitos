@@ -3,7 +3,7 @@
     <title>Benchmark Games</title>
 </head>
 <body>
-    <form>
+    <form name="benchmark" method="get">
         <label for="jogos">Jogo:</label>
         <select name="jogos" id="jogos"></select><br>
         <label for="cpu">Processador:</label>
