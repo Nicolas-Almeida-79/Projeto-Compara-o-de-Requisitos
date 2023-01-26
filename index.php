@@ -3,16 +3,13 @@
     <title>Benchmark Games</title>
 </head>
 <body>
-    <form name="benchmark" method="get">
-        <label for="jogos">Jogo:</label>
-        <select name="jogos" id="jogos"></select><br>
-        <label for="cpu">Processador:</label>
-        <select name="cpu" id="cpu"></select><br>
-        <label for="gpu">Placa de Video:</label>
-        <select name="gpu" id="gpu"></select><br>
-        <label for="ram">Memoria RAM:</label>
-        <select name="ram" id="ram"></select><br>
-        <input type="submit" name="Enviar">
-    </form>
+    <fieldset>
+        <legend> Inicio </legend>
+        <form name="entrada">
+            <a href="loginADM.php"><button type="button" name ="LoginADM"> Login de Administrador </button> </a>
+            <a href="loginUser.php"><button type="button" name="LoginUser"> Login de Usuario</button></a>
+            <a href="cadastroUser.php"><button type="button" name="Cadastro"> Cadastro de Usuario</button></a>
+        </form>
+    </fieldset>
 </body>
 </html>
