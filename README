@@ -4,21 +4,45 @@ Davison Israel Azevedo
 Nícolas Rodrigues Almeida
 
 Metodologia
-Para a realização do sistema a ser desenvolvido será necessário iniciar com um levantamento dos atuais componentes de um CPU e suas especificações, da mesma forma será necessário efetuar o levantamento de requisitos dos atuais jogos mais acessados globalmente nos dias atuais.
+	Para a realização do sistema a ser desenvolvido será necessário iniciar com um levantamento dos atuais componentes de um CPU e suas especificações, da mesma forma será necessário efetuar o levantamento de requisitos dos atuais jogos mais acessados globalmente nos dias atuais.
 Após o levantamento e cadastro dos dados no banco será necessário iniciar a elaboração da plataforma na qual o usuário utilizará para suas consultas e comparações, a mesma deverá ser desenvolvida de forma web, e ser capaz de comparar componentes e trazer para o usuário as melhores opções de acordo com os seus requisitos.
-Utilizaremos para a organização da equipe durante o desenvolvimento do Software o método Kanban através da plataforma gratuita do ‘Trello’, este foi escolhido devido ao modo em que o mesmo potencializa e direciona o projeto através de organizações tanto para direcionar o que está sendo executado quanto para direcionar uma ordem para cada tarefa, eliminando assim a chance da equipe ‘atropelar etapas’ e condicionando a trabalharmos em uma maior sintonia durante o desenvolvimento.
-Para a formulação do nosso Kanban a equipe optará por utilizar em paralelo o método 5W1H para que a definição de cada tarefa que deverá ser executada possa ocorrer de forma organizada e cuidadosa, trazendo assim não só a organização no desenvolvimento, mas também durante o levantamento das tarefas uma maior clareza de todos os pontos a serem considerados para a equipe.
+Utilizaremos para a organização da equipe durante o desenvolvimento do Software o método Kanban através da plataforma gratuita do ‘Trello’, este foi escolhido devido ao modo em que o mesmo potencializa e direciona o projeto através de organizações tanto para direcionar o que está sendo executado quanto para direcionar uma ordem para cada tarefa, eliminando assim a chance da equipe ‘atropelar etapas’ e condicionando a trabalharmos em uma maior sintonia durante o desenvolvimento. 
+	Para a formulação do nosso Kanban a equipe optará por utilizar em paralelo o método 5W1H para que a definição de cada tarefa que deverá ser executada possa ocorrer de forma organizada e cuidadosa, trazendo assim não só a organização no desenvolvimento, mas também durante o levantamento das tarefas uma maior clareza de todos os pontos a serem considerados para a equipe.
 
 Requisitos iniciais do sistema
-● Um banco de dados com 4 tabelas:
-○ Informações pré selecionadas dos requisitos de alguns jogos
-○ Informações sobre processadores
-○ Informações sobre memória ram
-○ Informações sobre placa de vídeo
-● Um formulário dentro do site para o usuário informar o jogo que deseja comparar e as peças do computador
+Um banco de dados com 4 tabelas: 
+Informações pré selecionadas dos requisitos de alguns jogos
+Informações sobre processadores
+Informações sobre memória ram
+Informações sobre placa de vídeo
+Um formulário dentro do site para o usuário informar o jogo que deseja comparar e as peças do computador
 
 Tecnologias a serem utilizadas com base nos requisitos
-Será utilizado PHP para realizar a leitura do formulário e exibir a comparação das peças, MySQL para manter armazenado as informações do banco de dados, HTML e CSS para criar e organizar o site em si.
+	Será utilizado PHP para realizar a leitura do formulário e exibir a comparação das peças, MySQL para manter armazenado as informações do banco de dados, HTML e CSS para criar e organizar o site em si.
 
 Estrutura de controle de versão
-Usaremos o GitHub para controlar as versões do projeto, mantendo de forma organizada em um repositório cada uma das versões criadas em ordem como cópias do sistema.
+	Usaremos o GitHub para controlar as versões do projeto, mantendo de forma organizada em um repositório cada uma das versões criadas em ordem como cópias do sistema.
+
+Estrutura existente
+	A primeira versão do projeto vem sendo desenvolvida completamente em PHP fazendo o uso de Sessões para diferenciar o que cada tipo de usuário terá ou não permissão de fazer, inicialmente a primeira versão trás arquivos Json tanto para o cadastro de usuários quanto para o cadastro de componentes, que somente o administrador poderá efetuar.
+As informações de cadastro estão sendo escritas em um Json, que vai conter dados como e-mail e senha, a senha trará consigo futuramente criptografia tipo Hash, garantindo assim a segurança a partir de uma fórmula matemática basicamente impossível de ser revertida.
+Os formulários de login trazem consigo validações a partir do próprio PHP utilizando funções como “empty” para validar se o usuário digitou algo na caixa de Login por ex. caso o usuário não digite nada, aparecerá uma mensagem de erro indicando para o mesmo que deve preencher ambos os campos.
+
+Método ágil
+	O método utilizado durante o desenvolvimento foi o Scrum, o projeto teve sua ocorrência com reuniões informais dentre os integrantes, onde o objetivo principal era tratar em que pé o programa se encontrava por parte de cada participante, as reuniões trataram de definir os requisitos para o sistema e como cada funcionalidade funcionaria, da mesma forma, a medida em que foram iniciadas as funcionalidades, elas foram sendo testadas nas reuniões e foi sendo tratado novamente sobre os requisitos, neste ponto foi muito utilizado o trello para relatar com precisão se determinada funcionalidade deixaria de ser um “requisito” e passaria para a aba “andamento” no Kanban ou tida como “pronta”.
+	O método foi de grande ajuda, já que sempre que era discutido a respeito de alguma funcionalidade, novos pontos vinham a tona, como por exemplo: “o que teria que ser utilizado para que tal coisa pudesse funcionar” e a partir daí novos requisitos foram surgindo geralmente no formato de pesquisa, como por exemplo de componentes em si. 
+	
+Reuniões
+
+Datas e temas iniciais
+22/12/2022 - Levantamento de Requisitos;
+24/12/2022 - Diagrama de caso de uso;
+27/12/2022 - Pesquisas sobre componentes;
+29/12/2022 - Informações pré selecionadas sobre jogos;
+01/01/2023 - Pesquisa informativa sobre softwares parecidos;
+03/01/2023 - linguagens de programação a serem utilizadas para suprir demandas levantadas anteriormente;
+05/01/2023 - Adequação da estrutura de controle de versão e da forma a ser utilizada;
+06/01/2023 - Levantamento de requisitos software, inputs necessários e estudo do design;
+07/01/2023 -  Levantamento de requisitos software, controle de sessões;
+08/01/2023 -  Levantamento de requisitos sistema, cadastro das informações de software já levantadas anteriormente;
+09/01/2023 -  Discussão sobre o uso inicial de Json para o armazenamento de dados de software e jogos;
